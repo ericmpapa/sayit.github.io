@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-1.2841033"
-     inkscape:cy="-53.737902"
+     inkscape:zoom="1.4"
+     inkscape:cx="163.34958"
+     inkscape:cy="86.455108"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,22 +59,20 @@
      id="layer1"
      transform="translate(216.57303,-351.09912)">
     <g
-       transform="translate(-979.50266,-437.81605)"
-       style="display:inline"
-       id="g5269">
+       id="g4188">
       <g
-         style="fill:#cccccc"
-         transform="matrix(1.25,0,0,-1.25,884.01612,820.58963)"
+         style="fill:#4d4d4d"
+         transform="matrix(1.25,0,0,-1.25,-95.48654,382.77358)"
          id="g86">
         <path
            d="m 0,0 c 4.747,5.92 3.799,14.566 -2.121,19.317 -5.919,4.748 -14.567,3.798 -19.316,-2.122 l -2.827,-3.524 c -5.676,2.285 -11.872,3.555 -18.367,3.555 -6.495,0 -12.689,-1.27 -18.367,-3.555 l -2.826,3.524 c -4.75,5.92 -13.398,6.87 -19.317,2.122 C -89.061,14.566 -90.008,5.92 -85.262,0 l 2.645,-3.298 c -5.816,-8.085 -9.252,-17.996 -9.252,-28.716 0,-24.971 18.593,-45.587 42.687,-48.791 0.257,-0.035 0.514,-0.067 0.772,-0.098 0.42,-0.049 0.84,-0.096 1.262,-0.134 0.426,-0.039 0.856,-0.069 1.286,-0.098 0.308,-0.02 0.615,-0.045 0.924,-0.058 0.765,-0.036 1.534,-0.059 2.307,-0.059 0.774,0 1.541,0.023 2.306,0.059 0.311,0.013 0.62,0.039 0.929,0.058 0.428,0.029 0.854,0.058 1.278,0.098 0.427,0.038 0.85,0.085 1.273,0.135 0.252,0.03 0.503,0.061 0.753,0.095 24.1,3.201 42.698,23.818 42.698,48.793 0,10.72 -3.436,20.631 -9.252,28.716 L 0,0 Z"
-           style="fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           style="fill:#4d4d4d;fill-opacity:1;fill-rule:evenodd;stroke:none"
            id="path88"
            inkscape:connector-curvature="0" />
       </g>
       <g
          id="g8889"
-         transform="matrix(1.25,0,0,-1.25,0,1000)">
+         transform="matrix(1.25,0,0,-1.25,-979.50266,562.18395)">
         <g
            id="g1498"
            transform="translate(610.3437,114.5146)">

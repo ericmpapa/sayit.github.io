@@ -1,14 +1,220 @@
 ﻿<html>
 
 <head>
-    <titre>Say It</titre>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <title>Say It</title>
+    <script src="js/tweenjs.min.js"></script>
+    <script src="js/soundjs.min.js"></script>
+    <script src="js/preloadjs.min.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/sayit.js"></script>
+    <script src="js/sayit.ecran.menu-principal.js"></script>
 </head>
 
-<body>
+<body onload="sayit.init()">
     <div id="jeux">
-        <div id="menu-principal" class="ecran"></div>
-        <div id="ecran-jeux" class="ecran"></div>
-        <div id="menu-niveau" class="ecran"></div>
+        <div id="splashscreen" class="ecran actif">
+            <img src="img/sayit.svg" class="logo-gr" />
+            <div class="progressbar">
+                <div class="interieur"></div>
+            </div>
+        </div>
+        <div id="menu-principal" class="ecran">
+            <img src="img/sayit.svg" class="logo-gr" />
+            <ul class="menu">
+                <li>
+                    <a id="bouton-resume">resume</a>
+                </li>
+                <li>
+                    <a id="bouton-start" class="actif">start</a>
+                </li>
+            </ul>
+        </div>
+        <div id="ecran-jeux" class="ecran">
+            <h1 class="header">Level 1</h1>
+            <img src="img/levels/lvl1.svg" class="logo-lvl actif" />
+            <img src="img/levels/lvl2.svg" class="logo-lvl" />
+            <img src="img/levels/lvl3.svg" class="logo-lvl" />
+            <img src="img/levels/lvl4.svg" class="logo-lvl" />
+            <img src="img/levels/lvl5.svg" class="logo-lvl" />
+            <img src="img/levels/lvl6.svg" class="logo-lvl" />
+            <div>
+                <h2>say this</h2>
+            </div>
+            <canvas id="words-area"></canvas>
+            <div>
+                <h1 id="score">score: 0/100</h1>
+            </div>
+
+            <span class="bouton-control c1">
+                <a>
+                    <span class="fa fa-play"></span>
+            </a>
+            </span>
+            <span class="bouton-control c2">
+                <div class="outer-2"></div>
+                <a>
+                    <span class="fa fa-microphone"></span>
+            </a>
+            </span>
+        </div>
+        <div id="menu-niveau" class="ecran">
+            <ul>
+                <li id="niv1" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl1.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 1</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:100</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv2" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl2.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 2</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:80</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv3" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl3.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 3</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:120</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv4" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl4.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 4</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:100</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv5" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl5.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 5</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:120</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv6" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl6.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 6</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:80</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv7" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl7.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 7</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:120</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+                <li id="niv8" class="niv-item">
+                    <a>
+                        <table>
+                            <tr>
+                                <td><img src="img/levels/lvl8.svg" /></td>
+                                <td class="niv-desc">
+                                    <ul>
+                                        <li>
+                                            <h1>LEVEL 8</h1>
+                                        </li>
+                                        <li>
+                                            <p>max:100</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div id="menu-parametre" class="ecran"></div>
     </div>
 </body>

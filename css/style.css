@@ -2,16 +2,287 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #fee778;
 }
 
 #jeux {}
 
 #menu-principal {}
 
-#ecran-jeux {}
+#ecran-jeux {
+    font-family: "Slackey";
+}
 
 #menu-niveau {}
 
 #menu-parametre {}
 
-.ecran {}
+#words-area {
+    width: 80%;
+    height: 20%;
+    max-width: 100%;
+    border: solid 0.1em #3271ad;
+    background-color: #fdea8e;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#score {
+    color: #f77d3c;
+    text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+
+.ecran {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ecran.actif {
+    display: block;
+}
+
+.actif {
+    display: block;
+}
+
+.logo-gr {
+    display: inline;
+    width: 25em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.logo-lvl {
+    display: none;
+}
+
+.logo-lvl.actif {
+    display: inline;
+}
+
+.niv-desc {
+    width: 13em;
+}
+
+.niv-desc li {
+    text-align: center;
+}
+
+.niv-desc h1 {
+    font-family: "Slackey";
+}
+
+.niv-desc p {
+    font-family: "Geo";
+    font-size: 2em;
+}
+
+.niv-item {
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.niv-item a {
+    cursor: pointer;
+    margin-top: 2em;
+    display: inline-block;
+    background-color: #cccccc;
+    border: 0.05em solid #333333;
+}
+
+.niv-item.actif a {
+    background-color: #f8c67c;
+}
+
+.niv-item img {
+    width: 5em;
+}
+
+.niv-item.actif a:hover {
+    background-color: #ad5c30;
+}
+
+.logo-lvl {
+    width: 6em;
+}
+
+.outer {
+    width: 3em;
+    height: 3em;
+    left: 0.1em;
+    top: 8.1em;
+    position: relative;
+    /* -webkit-transform: scale(1);*/
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid #3271ad;
+    margin: 0 auto;
+    transition: 1.5s all ease;
+    /*-webkit-animation: woong 1.5s infinite;*/
+}
+
+.outer-2 {
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0 auto;
+    left: 0.08em;
+    top: 4.35em;
+    -webkit-transform: scale(1);
+    border-radius: 100%;
+    position: relative;
+    background-color: red;
+    transition: 1.5s all ease;
+    -webkit-animation: woong-2 1.5s infinite;
+    -webkit-animation-delay: 2.5s;
+}
+
+.bouton-control.c1 {
+    width: 4em;
+    height: 4em;
+    margin-right: 2em;
+
+}
+
+.bouton-control.c2 {
+    width: 5em;
+    height: 5em;
+    margin-top: -3em;
+}
+
+.bouton-control span {
+    display: block;
+}
+
+.bouton-control.c1 span {
+    margin-top: 0.6em;
+    font-size: 1.8em;
+}
+
+.bouton-control.c2 span {
+    margin-top: 0.5em;
+    font-size: 2.3em;
+}
+
+.bouton-control.c1 a,
+.bouton-control.c2 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #f77d3c;
+    border-radius: 100%;
+    border: solid 0.1em #333;
+    cursor: default;
+    transition: .3s all ease-in;
+    position: relative;
+    cursor: pointer;
+}
+
+.bouton-control a img {
+    width: 2em;
+    height: 2em;
+}
+
+.bouton-control a:hover {
+    background-color: #af5627;
+}
+
+.bouton-control a:active {
+    background-color: #f77d3c;
+}
+
+.progressbar {
+    margin: 0 auto;
+    margin-top: 3em;
+    border: 1px solid #333333;
+    width: 25em;
+    height: 2em;
+}
+
+.progressbar .interieur {
+    width: 0%;
+    height: 100%;
+    background-color: #ad5c30;
+}
+
+h1.header {
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.menu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li {
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+ul.menu li a {
+    display: none;
+    margin: 0 auto;
+    font-family: Slackey, sans-serif;
+    font-size: 2.8em;
+    color: #1a541a;
+    padding: 0 1em;
+    background: #f77d3c;
+    border: 0.1em solid #333333;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 4em;
+}
+
+ul.menu li a.actif {
+    display: block;
+}
+
+ul.menu li a:hover {
+    background: #ad5c30;
+}
+
+ul.menu li a:active {
+    color: #cfc337;
+    background: #ad5c30;
+}
+
+@-webkit-keyframes woong {
+    0% {
+        -webkit-trasform: scale(1.2);
+    }
+    50% {
+        -webkit-transform: scale(1.8);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(2.4);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes woong-2 {
+    0% {
+        -webkit-transform: scale(1.2);
+        opacity: 0.6;
+    }
+    50% {
+        -webkit-transform: scale(1.6);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.bouton-control {
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+}

@@ -1,0 +1,72 @@
+{
+    "manifest": [
+        {
+            "src": "img/back.svg",
+            "id": "back"
+        },
+        {
+            "src": "img/microphone.svg",
+            "id": "microphone"
+        },
+        {
+            "src": "img/play.svg",
+            "id": "play"
+        },
+        {
+            "src": "img/sayit.svg",
+            "id": "sayit"
+        },
+        {
+            "src": "img/levels/lvl1.svg",
+            "id": "lvl1"
+        },
+        {
+            "src": "img/levels/lvl2.svg",
+            "id": "lvl2"
+        },
+        {
+            "src": "img/levels/lvl3.svg",
+            "id": "lvl3"
+        },
+        {
+            "src": "img/levels/lvl4.svg",
+            "id": "lvl4"
+        },
+        {
+            "src": "img/levels/lvl5.svg",
+            "id": "lvl5"
+        },
+        {
+            "src": "img/levels/lvl6.svg",
+            "id": "lvl6"
+        },
+        {
+            "src": "img/levels/lvl7.svg",
+            "id": "lvl7"
+        },
+        {
+            "src": "img/levels/lvl8.svg",
+            "id": "lvl8"
+        },
+        {
+            "src": "js/sayit.data.js",
+            "id": "sc-menu-principal"
+        },
+        {
+            "src": "js/sayit.ecran.menu-principal.js",
+            "id": "sc-menu-principal"
+        },
+        {
+            "src": "js/sayit.ecran.menu-niveau.js",
+            "id": "sc-menu-niveau"
+        },
+        {
+            "src": "js/sayit.ecran.jeux.js",
+            "id": "sc-ecran-jeux"
+        },
+        {
+            "src": "https://fonts.googleapis.com/css?family=Geo|Slackey",
+            "id": "sc-slackey"
+        }
+    ]
+}
