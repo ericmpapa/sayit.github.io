@@ -18,10 +18,7 @@ body {
 #menu-parametre {}
 
 #words-area {
-    width: 80%;
-    height: 20%;
-    max-width: 100%;
-    border: solid 0.1em #3271ad;
+    border: solid 1px #3271ad;
     background-color: #fdea8e;
     margin-left: 2em;
     margin-right: 2em;
@@ -30,6 +27,14 @@ body {
 #score {
     color: #f77d3c;
     text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+
+#bouton-mic.actif .outer-2 {
+    display: block;
+}
+
+#bouton-mic .outer-2 {
+    display: none;
 }
 
 .ecran {
@@ -50,7 +55,7 @@ body {
 .logo-gr {
     display: inline;
     width: 25em;
-    margin-top: 2em;
+    margin-top: 6em;
     margin-bottom: 2em;
 }
 
@@ -60,6 +65,15 @@ body {
 
 .logo-lvl.actif {
     display: inline;
+}
+
+#texte-dit {
+    display: none;
+    font-family: "Arial";
+}
+
+#texte-dit.actif {
+    display: block;
 }
 
 .niv-desc {
@@ -106,21 +120,6 @@ body {
 
 .logo-lvl {
     width: 6em;
-}
-
-.outer {
-    width: 3em;
-    height: 3em;
-    left: 0.1em;
-    top: 8.1em;
-    position: relative;
-    /* -webkit-transform: scale(1);*/
-    border-radius: 100%;
-    background-color: transparent;
-    border: 1px solid #3271ad;
-    margin: 0 auto;
-    transition: 1.5s all ease;
-    /*-webkit-animation: woong 1.5s infinite;*/
 }
 
 .outer-2 {
@@ -206,6 +205,12 @@ body {
     background-color: #ad5c30;
 }
 
+.bouton-control {
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+}
+
 h1.header {
     font-size: 3em;
 }
@@ -279,10 +284,4 @@ ul.menu li a:active {
         -webkit-transform: scale(2);
         opacity: 0;
     }
-}
-
-.bouton-control {
-    display: inline-block;
-    width: 8em;
-    height: 8em;
 }

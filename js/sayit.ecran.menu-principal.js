@@ -1,7 +1,6 @@
 sayit.ecrans["menu-principal"] = (function () {
-    var niveauActuel = sayit.niveauActuel;
-
     function initialisation() {
+        var niveauActuel = sayit.niveauActuel;
         var boutonStart = dom.$("#bouton-start")[0];
         dom.bind(boutonStart, "click", function (e) {
             niveauActuel = 0
@@ -10,8 +9,13 @@ sayit.ecrans["menu-principal"] = (function () {
 
         var boutonResume = dom.$("#bouton-resume")[0];
 
-        if (niveauActuel > 0) {
-            dom.removeClass(boutonResume, "actif");
+
+        if (localStorage.niveauEnreg > 1) {
+            dom.addClass(boutonResume, "actif");
+            dom.bind(boutonResume, "click", function (e) {
+                sayit.niveauActuel = localStorage.niveauEnreg;
+                sayit.afficherEcran("menu-niveau");
+            });
         }
 
         dom.bind(boutonStart, "click", function (e) {

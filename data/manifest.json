@@ -53,6 +53,10 @@
             "id": "sc-menu-principal"
         },
         {
+            "src": "js/sayit.recog.js",
+            "id": "sc-recog"
+        },
+        {
             "src": "js/sayit.ecran.menu-principal.js",
             "id": "sc-menu-principal"
         },
@@ -67,6 +71,27 @@
         {
             "src": "https://fonts.googleapis.com/css?family=Geo|Slackey",
             "id": "sc-slackey"
+        },
+        {
+            "src": "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
+            "id": "sc-fontawesome"
+        }
+        ,
+        {
+            "src": "sounds/saythis.ogg",
+            "id": "sc-saythis"
+        },
+        {
+            "src": "sounds/bloop.ogg",
+            "id": "sc-saythis"
+        },
+        {
+            "src": "sounds/tada.ogg",
+            "id": "sc-saythis"
+        },
+        {
+            "src": "sounds/error.ogg",
+            "id": "sc-saythis"
         }
     ]
 }

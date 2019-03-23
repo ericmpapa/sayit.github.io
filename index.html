@@ -2,11 +2,11 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
     <title>Say It</title>
     <script src="js/tweenjs.min.js"></script>
     <script src="js/soundjs.min.js"></script>
     <script src="js/preloadjs.min.js"></script>
+    <script src="js/createjs.min.js"></script>
     <script src="js/dom.js"></script>
     <script src="js/sayit.js"></script>
     <script src="js/sayit.ecran.menu-principal.js"></script>
@@ -32,27 +32,28 @@
             </ul>
         </div>
         <div id="ecran-jeux" class="ecran">
-            <h1 class="header">Level 1</h1>
-            <img src="img/levels/lvl1.svg" class="logo-lvl actif" />
-            <img src="img/levels/lvl2.svg" class="logo-lvl" />
-            <img src="img/levels/lvl3.svg" class="logo-lvl" />
-            <img src="img/levels/lvl4.svg" class="logo-lvl" />
-            <img src="img/levels/lvl5.svg" class="logo-lvl" />
-            <img src="img/levels/lvl6.svg" class="logo-lvl" />
+            <h1 id="lvl-header" class="header">Level 1</h1>
+            <img id="logo-lvl1" src="img/levels/lvl1.svg" class="logo-lvl actif" />
+            <img id="logo-lvl2" src="img/levels/lvl2.svg" class="logo-lvl" />
+            <img id="logo-lvl3" src="img/levels/lvl3.svg" class="logo-lvl" />
+            <img id="logo-lvl4" src="img/levels/lvl4.svg" class="logo-lvl" />
+            <img id="logo-lvl5" src="img/levels/lvl5.svg" class="logo-lvl" />
+            <img id="logo-lvl6" src="img/levels/lvl6.svg" class="logo-lvl" />
             <div>
                 <h2>say this</h2>
             </div>
-            <canvas id="words-area"></canvas>
+            <canvas id="words-area" width="800" height="100"></canvas>
+            <p id="texte-dit">you said:<strong id="texte-dt"></strong></p>
             <div>
                 <h1 id="score">score: 0/100</h1>
             </div>
 
-            <span class="bouton-control c1">
+            <span id="bouton-speak" class="bouton-control c1">
                 <a>
                     <span class="fa fa-play"></span>
             </a>
             </span>
-            <span class="bouton-control c2">
+            <span id="bouton-mic" class="bouton-control c2">
                 <div class="outer-2"></div>
                 <a>
                     <span class="fa fa-microphone"></span>
@@ -72,7 +73,7 @@
                                             <h1>LEVEL 1</h1>
                                         </li>
                                         <li>
-                                            <p>max:100</p>
+                                            <p id="max-lvl1">max:100</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -91,7 +92,7 @@
                                             <h1>LEVEL 2</h1>
                                         </li>
                                         <li>
-                                            <p>max:80</p>
+                                            <p id="max-lvl2">max:80</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -110,7 +111,7 @@
                                             <h1>LEVEL 3</h1>
                                         </li>
                                         <li>
-                                            <p>max:120</p>
+                                            <p id="max-lvl3">max:120</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -129,7 +130,7 @@
                                             <h1>LEVEL 4</h1>
                                         </li>
                                         <li>
-                                            <p>max:100</p>
+                                            <p id="max-lvl4">max:100</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -148,7 +149,7 @@
                                             <h1>LEVEL 5</h1>
                                         </li>
                                         <li>
-                                            <p>max:120</p>
+                                            <p id="max-lvl5">max:120</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -167,7 +168,7 @@
                                             <h1>LEVEL 6</h1>
                                         </li>
                                         <li>
-                                            <p>max:80</p>
+                                            <p id="max-lvl6">max:80</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -186,7 +187,7 @@
                                             <h1>LEVEL 7</h1>
                                         </li>
                                         <li>
-                                            <p>max:120</p>
+                                            <p id="max-lvl7">max:120</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -205,7 +206,7 @@
                                             <h1>LEVEL 8</h1>
                                         </li>
                                         <li>
-                                            <p>max:100</p>
+                                            <p id="max-lvl8">max:100</p>
                                         </li>
                                     </ul>
                                 </td>

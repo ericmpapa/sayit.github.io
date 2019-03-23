@@ -1,8 +1,9 @@
 var sayit = (function () {
     var scriptQueue = [],
         numResourcesLoaded = 0,
-        numResources = 17,
+        numResources = 22,
         ecrans = [],
+        niveauMax = 1,
         niveauActuel = 1;
 
     function init() {
@@ -44,6 +45,14 @@ var sayit = (function () {
         afficherEcran("menu-principal");
     }
 
+    function enregistrerNiveau() {
+        if (typeof localStorage != 'undefined') {
+            localStorage.niveauEnreg = niveauActuel;
+        } else {
+            alert('Ce navigateur ne supporte pas le web storage');
+        }
+    }
+
     function afficherEcran(ecranId) {
         var $ = dom.$,
             ecranActif = $("#jeux .ecran.actif")[0],
@@ -62,12 +71,17 @@ var sayit = (function () {
         sayit.ecrans[ecranId].executer();
     }
 
-
+    function incrementeNiveauMax() {
+        if (sayit.niveauMax < 7) sayit.niveauMax++;
+    }
 
     return {
         init: init,
         ecrans: ecrans,
         afficherEcran,
-        niveauActuel: niveauActuel
+        niveauMax: niveauMax,
+        incrementeNiveauMax: incrementeNiveauMax,
+        niveauActuel: niveauActuel,
+        enregistrerNiveau: enregistrerNiveau
     };
 })()
