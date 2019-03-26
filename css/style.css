@@ -295,3 +295,17 @@ ul.menu li a:active {
         opacity: 0;
     }
 }
+
+@font-face {
+    font-family: "Slackey";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../webfonts/Slackey-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Geo";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../webfonts/Geo-Regular.ttf") format("truetype");
+}
