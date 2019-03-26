@@ -49,6 +49,14 @@
             "id": "lvl8"
         },
         {
+            "src": "img/back.svg",
+            "id": "retour-menu-princ"
+        },
+        {
+            "src": "img/levels/menu.svg",
+            "id": "retour-menu-niv"
+        },
+        {
             "src": "js/sayit.data.js",
             "id": "sc-menu-principal"
         },

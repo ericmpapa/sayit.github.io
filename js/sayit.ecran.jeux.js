@@ -170,6 +170,16 @@ sayit.ecrans["ecran-jeux"] = (function () {
             desactiverBoutonMic();
         };
 
+        var retourMenuPrinc = dom.$("#retour-menu-princ")[0];
+        dom.bind(retourMenuPrinc, "click", function (e) {
+            sayit.afficherEcran("menu-principal");
+        });
+
+        var retourMenuNiv = dom.$("#retour-menu-niv")[0];
+        dom.bind(retourMenuNiv, "click", function (e) {
+            sayit.afficherEcran("menu-niveau");
+        });
+
         var boutonMic = dom.$("#bouton-mic")[0];
         dom.bind(boutonMic, "click", function (e) {
             if (micEnabled) {

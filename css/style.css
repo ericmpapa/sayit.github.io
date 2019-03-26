@@ -67,6 +67,16 @@ body {
     display: inline;
 }
 
+.nav-menu li {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.nav-menu li img {
+    cursor: pointer;
+    width: 3em;
+}
+
 #texte-dit {
     display: none;
     font-family: "Arial";

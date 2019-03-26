@@ -1,7 +1,7 @@
 var sayit = (function () {
     var scriptQueue = [],
         numResourcesLoaded = 0,
-        numResources = 22,
+        numResources = 24,
         ecrans = [],
         niveauMax = 1,
         niveauActuel = 1;
@@ -31,6 +31,9 @@ var sayit = (function () {
         switch (item.type) {
             case createjs.Types.JAVASCRIPT:
                 document.body.appendChild(result);
+                break;
+            case createjs.Types.CSS:
+                document.head.appendChild(result);
                 break;
         }
         var a = Math.round(numResourcesLoaded * 100 / numResources);
