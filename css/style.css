@@ -67,6 +67,24 @@ body {
     display: inline;
 }
 
+.licence a,
+.licence a:active {
+    cursor: pointer;
+    font-family: "Geo";
+    text-decoration: none;
+    color: black;
+}
+
+.licence a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.licence a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-menu li {
     display: inline-block;
     margin-right: 2em;

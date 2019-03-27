@@ -7,6 +7,11 @@ sayit.ecrans["menu-principal"] = (function () {
             sayit.afficherEcran("menu-niveau");
         });
 
+        var licence = dom.$("#licence")[0];
+        dom.bind(licence, "click", function (e) {
+            window.open('licence.html', '_blank');
+        });
+
         /*var boutonResume = dom.$("#bouton-resume")[0];
 
 
