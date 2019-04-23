@@ -1,5 +1,5 @@
 sayit.data = [
-    ["I am a boy", "you are a student", "I am a teacher", "she is a girl", "you are old", "john is a man", "I am happy", "english is easy"],
+    ["I am a boy", "you are a student", "I am a teacher", "she is a girl", "how old are you?", "john is a man", "I am happy", "english is easy"],
     ["I have a pencil", "You have a pair of scissors", "Do you have any pencils?", "How many sisters do you have?", "We had a car waiting outside", "I have something for you", "I had no time to see you", "Was that a pencil?"],
     ["There is not any book on the table", "Is there a Miss Lee staying here?", "What is there on the table?", "There are two pencils in my box", "There won’t be many teachers going to the party", "Will there be a birthday party in the home?", "There’s a telephone call for you"],
     ["I open the door", "Have you seen him?", "Where did you see him?", "I have lived in Shanghai for a long time", "What do you need it for?", "I have bought the car", "The door has been opened", "Has your brother come from Paris?"],
