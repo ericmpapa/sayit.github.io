@@ -69,6 +69,7 @@ sayit.ecrans["ecran-jeux"] = (function () {
     function activerBoutonMic() {
         var boutonMic = dom.$("#bouton-mic")[0];
         dom.addClass(boutonMic, "actif");
+        sayit.recog.recognition.stop();
         var instance = createjs.Sound.play("bloop");
         instance.on("complete", bipPlayedHandler);
         instance.volume = 0.5;
