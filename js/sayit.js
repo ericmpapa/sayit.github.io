@@ -47,7 +47,7 @@ var sayit = (function () {
     function setup() {
         if (typeof localStorage != 'undefined' && localStorage.niveauEnreg) {
             console.log("ok")
-            niveauActuel = localStorage.niveauEnreg
+            niveauMax = localStorage.niveauEnreg
         }
         afficherEcran("menu-principal");
     }

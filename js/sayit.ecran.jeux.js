@@ -57,9 +57,12 @@ sayit.ecrans["ecran-jeux"] = (function () {
             }, 3000).call(handleAlphaTweenComplete);
         } else {
             var instance = createjs.Sound.play("tada");
-            sayit.incrementeNiveauMax();
-            sayit.enregistrerNiveau();
+            if (niveauActuel == niveauMax) {
+                sayit.incrementeNiveauMax();
+                sayit.enregistrerNiveau();
+            }
             sayit.afficherEcran("menu-niveau");
+
         }
     }
 
